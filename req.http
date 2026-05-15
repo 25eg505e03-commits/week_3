@@ -1,0 +1,31 @@
+###read all products
+GET http://localhost:4000/product-api/product
+
+###read product by id
+GET http://localhost:4000/product-api/product/1234
+
+###create new product
+POST http://localhost:4000/product-api/product
+content-Type:application/json
+
+{ 
+   "productId":1234,
+   "productName":"purse",
+   "price":40000,
+   "brand":"gucci"
+
+}
+
+
+###update product by id
+PUT http://localhost:4000/product-api/product/1234
+content-Type:application/json
+
+{
+     "productId":1234,
+   "productName":"purse",
+   "price":30000,
+   "brand":"dior"
+}
+
+
